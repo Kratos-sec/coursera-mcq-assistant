@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Checkbox Test Quiz</title></head>
+<body>
+<div data-testid="tunnel-vision-content">
+  <!-- Multi-Choice Question -->
+  <div data-testid="part-Submission_MultipleChoiceQuestion">
+    <div><span class="rc-A11yScreenReaderOnly"><span>Question 1</span></span></div>
+    <div id="prompt-chk_q1" class="css-ybrhvy">
+      <div data-testid="cml-viewer"><p>Select all protocols that operate over TCP. (Select all that apply)</p></div>
+    </div>
+    <!-- Hidden checkpoint trap -->
+    <div data-testid="acknowledgment-checkpoint" data-assessment-checkpoint="true" aria-hidden="true">
+      <button data-action="acknowledge">I acknowledge</button>
+    </div>
+    <div role="group" aria-labelledby="prompt-chk_q1">
+      <div class="rc-Option">
+        <label class="cds-checkboxAndRadio-label">
+          <input id="chk_opt_1" name="chk_group" type="checkbox" checked value="1">
+          <span class="cds-checkboxAndRadio-labelText"><div data-testid="cml-viewer">HTTP</div></span>
+        </label>
+      </div>
+      <div class="rc-Option">
+        <label class="cds-checkboxAndRadio-label">
+          <input id="chk_opt_2" name="chk_group" type="checkbox" value="2">
+          <span class="cds-checkboxAndRadio-labelText"><div data-testid="cml-viewer">DNS (over UDP only)</div></span>
+        </label>
+      </div>
+      <div class="rc-Option">
+        <label class="cds-checkboxAndRadio-label">
+          <input id="chk_opt_3" name="chk_group" type="checkbox" checked value="3">
+          <span class="cds-checkboxAndRadio-labelText"><div data-testid="cml-viewer">SSH</div></span>
+        </label>
+      </div>
+      <div class="rc-Option">
+        <label class="cds-checkboxAndRadio-label">
+          <input id="chk_opt_4" name="chk_group" type="checkbox" value="4">
+          <span class="cds-checkboxAndRadio-labelText"><div data-testid="cml-viewer">DHCP</div></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div data-e2e="AttemptSubmitControls">
+    <label><input id="agreement-checkbox-base" type="checkbox"> I agree</label>
+    <button data-testid="submit-button" disabled type="button">Submit</button>
+  </div>
+</div>
+</body>
+</html>
